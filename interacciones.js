@@ -43,7 +43,7 @@ function selectorFila(){
 }
 
 function elejirPalabra(){
-    const palabras = ["valor","pesca","calza","volar"];
+    const palabras = ["valor","pesca","calza","volar","pulso","pulpo","pulga","cerdo","celda","campa","campo","perro","perra","papel","pasta","robar","roble","rodeo","raton","rampa","rampa","rezar","reina","reino","reloj","sorma","reloj","palma","baile","baila","bajar","bruja","broma"];
     let indiceAleatorio = Math.floor(Math.random() * palabras.length);
     palabras[indiceAleatorio] = palabras[indiceAleatorio].toUpperCase();
     return palabras[indiceAleatorio];
