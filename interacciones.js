@@ -43,7 +43,7 @@ function selectorFila(){
 }
 
 function elejirPalabra(){
-    const palabras = ["valor","pesca","calza","volar","pulso","pulpo","pulga","cerdo","celda","campa","campo","perro","perra","papel","pasta","robar","roble","rodeo","raton","rampa","rampa","rezar","reina","reino","reloj","sorma","reloj","palma","baile","baila","bajar","bruja","broma"];
+    const palabras = ["valor","pesca","calza","volar","pulso","pulpo","pulga","cerdo","celda","campa","campo","perro","perra","papel","pasta","robar","roble","rodeo","raton","rampa","rampa","rezar","reina","reino","reloj","sorma","reloj","palma","baile","baila","bajar","bruja","broma","cajon","garza","gamba","gorro","gordo","golpe","sazon","cesto","cetro","cigar","cinta","cinto","cobre","copia","copla","coral","corba","corzo","zorro","zorra","zumba","zurdo","jugar","juego","junta","junco","jurar","yegua","yerno","yogur","noria","norte","vista","visto","virus","volar","vulva","hacha","helio","hongo","honor","horno","huevo","huida","rapaz","rueda","ruedo","ruido","feria","feroz","ficha","fideo","fiera","fijos","filar","filas","filos"];
     let indiceAleatorio = Math.floor(Math.random() * palabras.length);
     palabras[indiceAleatorio] = palabras[indiceAleatorio].toUpperCase();
     return palabras[indiceAleatorio];
