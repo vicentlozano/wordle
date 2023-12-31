@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAGICWORDLE</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.js"></script>
+    </head>
+<body>
+    <header>
+        <h1 id = "title">MAGICWORDLE</h1>
+        <nav>
+            <ul>
+                <li><a href="principal.html">Inicio</a></li>
+                <li><a href="juego.html">Juego</a></li>
+                <li><a href="ranking.html">Ranking</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        
+
+    </header>
+    <main>
+        <table id = "tablaJuego">
+
+        </table>
+        <div id="teclado">
+            <div id ="tecladofila1">
+                <button onclick="presionarTecla('Q')">q</button>
+                <button onclick="presionarTecla('W')">w</button>
+                <button onclick="presionarTecla('E')">e</button>
+                <button onclick="presionarTecla('R')">r</button>
+                <button onclick="presionarTecla('T')">t</button>
+                <button onclick="presionarTecla('Y')">y</button>
+                <button onclick="presionarTecla('U')">u</button>
+                <button onclick="presionarTecla('I')">i</button>
+                <button onclick="presionarTecla('O')">o</button>
+                <button onclick="presionarTecla('P')">p</button>
+
+            </div>
+            <div id ="tecladofila2">
+                <button onclick="presionarTecla('A')">a</button>
+                <button onclick="presionarTecla('S')">s</button>
+                <button onclick="presionarTecla('D')">d</button>
+                <button onclick="presionarTecla('F')">f</button>
+                <button onclick="presionarTecla('G')">g</button>
+                <button onclick="presionarTecla('H')">h</button>
+                <button onclick="presionarTecla('J')">j</button>
+                <button onclick="presionarTecla('K')">k</button>
+                <button onclick="presionarTecla('L')">l</button>
+                <button onclick="presionarTecla('Ñ')">ñ</button>
+
+            </div>
+            <div id ="tecladofila3">
+                <button onclick="presionarTecla('Backspace')">⌫</button>
+                <button onclick="presionarTecla('Z')">z</button>
+                <button onclick="presionarTecla('X')">x</button>
+                <button onclick="presionarTecla('C')">c</button>
+                <button onclick="presionarTecla('V')">v</button>
+                <button onclick="presionarTecla('B')">b</button>
+                <button onclick="presionarTecla('N')">n</button>
+                <button onclick="presionarTecla('M')">m</button>
+                <button onclick="presionarTecla('Enter')">⏎</button>
+            </div>
+        </div>
+
+    </main>
+    <div id="modal" style="display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4);">
+        <div style="background-color: #fefefe; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 80%;">
+            <p id="modal-text"></p>
+        </div>
+    </div>
+    <script src="interacciones.js"></script>
+</body>
+
+</html>
